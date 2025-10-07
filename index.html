@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="calculator">
+            <div class="age-time">
+                <div class="justify-between"> 
+                    <label for="">Day</label>
+                    <input type="number" id="day" placeholder="DD">
+                    <h6 class="actives"></h6>
+                </div>
+               
+                <div class="justify-between"> 
+                    <label for="">Month</label>
+                    <input type="number" id="month" placeholder="MM">
+                    <h6 class="actives"></h6>
+                </div>
+
+                <div class="justify-between">
+                    <label for="">Day</label>
+                    <input type="number" id="year" placeholder="YYYY">
+                    <h6 class="actives"></h6>
+                </div>
+
+                <button class="calculat-btn">
+                    <img src="arrow.png" alt="">
+                </button>
+            </div>
+
+            <div class="calculat-age">
+                <div><span class="years">--</span> Years</div>
+
+                <div><span class="months">--</span> Months</div>
+
+                <div><span class="days">--</span> Days</div>
+            </div>
+        </div>
+
+    </section>
+
+   
+let num1 = document.getElementById("num1");
+let num2 = document.getElementById("num2");
+let showNum1 = document.getElementById("showNum1");
+let showNum2 = document.getElementById("showNum2");
+
+// input করলে সাথে সাথে দেখাবে
+num1.addEventListener("input", () => {
+  if (num1.value > 20) num1.value = 20; // ২০ এর বেশি ব্লক
+  showNum1.textContent = " 👉 " + num1.value;
+});
+
+num2.addEventListener("input", () => {
+  if (num2.value > 50) num2.value = 50; // ৫০ এর বেশি ব্লক
+  showNum2.textContent = " 👉 " + num2.value;
+});
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
