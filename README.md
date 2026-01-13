@@ -25,7 +25,4 @@ This project calculates a user's age based on their date of birth and shows the 
 
 ## 📸 Preview
 
-*(You can add a screenshot or GIF of your project here)*
-
-```md
-![Age Calculator Preview](preview.png)
+![Web Developer](https://imgur.com/a/TWu0ekI.jpeg)
